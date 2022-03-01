@@ -5,7 +5,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(mymap);
 
 var locationIcon = L.icon({
-    iconUrl: 'images/icon-location.svg',
+    iconUrl: 'https://raw.githubusercontent.com/Mister-Zeng/IP-Address-Tracker/10be58e34498e94a2a7f1950873e4ac0cbcaa941/images/icon-location.svg',
     iconSize: [30, 45],
     iconAnchor: [26.47, 54]
 });
