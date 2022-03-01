@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(217, 19%, 24%);
+    width: 550px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 30px 50px 1000px;
+}
+
+.adviceNums {
+    padding-top: 40px;
+    font-size: 15px;
+    color: hsl(150, 100%, 66%);
+}
+
+.adviceText {
+    padding: 20px;
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+    text-align: center;
+}
+
+.generator {
+    border: none;
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: 35px;
+}
+
+.dice {
+    width: 26px;  
+    margin: auto;
+}
+
+body {
+    background-color: hsl(217, 19%, 38%);
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.generator:hover {
+    box-shadow: 0 5px 60px hsla(150, 100%, 66%, 1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {
+    .divider {
+        content: url(/images/pattern-divider-mobile.svg);
+        width: 250px;
+    }
+    .container {
+        width: 300px;
+    }
+    .adviceText{
+        font-size: 20px;
+    }
+    .dice {
+        width: 22px;    
+    }
+    .generator {
+        width: 55px;
+        height: 55px;
+        top: 25px;
+    }
+    .adviceNums {
+    font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 451px){
+    .divider {
+        content: url(/images/pattern-divider-desktop.svg);
+    }
+
+}
