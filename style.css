@@ -171,8 +171,6 @@ button:hover, button:active {
         width: 100%;
         height: 300px;
         border-radius: 20px;
-        position: relative;
-        top: 65px;
     }
 
     .info_sub-box {
