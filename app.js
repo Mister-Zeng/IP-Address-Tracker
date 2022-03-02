@@ -62,7 +62,7 @@ async function getData() {
     mymap.setView([lat, lon], 5);
 
     document.getElementById('box1').innerText = data.ip;
-    document.getElementById('box2').innerTextt = data.location.region + ', ' + data.location.country + ' ' + data.location.postalCode;
+    document.getElementById('box2').innerText = data.location.region + ', ' + data.location.country + ' ' + data.location.postalCode;
     document.getElementById('box3').innerText = 'UTC' + data.location.timezone;
     document.getElementById('box4').innerText = data.isp;
 }
