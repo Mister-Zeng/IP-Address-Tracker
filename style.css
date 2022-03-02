@@ -44,6 +44,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: 30px;
 }
 
 #ipAddress {
@@ -95,6 +97,8 @@ button:hover, button:active {
     height: 140px;
     border-radius: 10px;
     background-color: white;
+    position: relative;
+    top: 55px;
 }
 .info_sub-box {
     width: 25%;
@@ -149,11 +153,10 @@ button:hover, button:active {
     }
     
     
-    #demo {
+    #error {
         text-align: center;
-        color: white;
         margin-top: 25px;
-        font-size: 20px;
+        font-size: 16px;
         display: none;
     }
     
@@ -166,6 +169,8 @@ button:hover, button:active {
         width: 100%;
         height: 300px;
         border-radius: 20px;
+        position: relative;
+        top: 65px;
     }
 
     .info_sub-box {
