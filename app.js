@@ -4,7 +4,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(mymap);
 
-var locationIcon = L.icon({
+let locationIcon = L.icon({
     iconUrl: 'https://raw.githubusercontent.com/Mister-Zeng/IP-Address-Tracker/10be58e34498e94a2a7f1950873e4ac0cbcaa941/images/icon-location.svg',
     iconSize: [30, 45],
     iconAnchor: [26.47, 54]
@@ -18,7 +18,7 @@ const api_url = 'https://geo.ipify.org/api/v2/country,city?';
 let url = api_url + 'apiKey=' + api_key + '&ipAddress=' + ip + '&domain=' + domain;
 
 async function myFunction() {
-    var inputvalue = document.getElementById('ipAddress').value;
+    let inputvalue = document.getElementById('ipAddress').value;
 
     if (/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(inputvalue)) {
         console.log('its an IP address');
@@ -49,7 +49,7 @@ input.addEventListener("keyup", function (event) {
 
 const marker = L.marker([0, 0], { icon: locationIcon }).addTo(mymap);
 
-//fetch API
+//fetch API & add data into element
 async function getData() {
     const response = await fetch(url);
     const data = await response.json();
