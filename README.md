@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](https://github.com/Mister-Zeng/React-App-Image-Search/blob/main/Demo.mov)
+![](https://github.com/Mister-Zeng/Portfolio-Website/blob/main/images/ip-address.png?raw=true)
 
 ### Links
 
